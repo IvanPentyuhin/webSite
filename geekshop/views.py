@@ -2,8 +2,34 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'index.html')
+    title = "GeekShop"
+    index = "index"
+    contact = "contact"
+    products = "products"
+    menu = [
+        {'href': index, 'name': 'домой'},
+        {'href': products, 'name': 'продукты'},
+        {'href': contact, 'name': 'контакты'},
+    ]
+    context = {
+        "title": title,
+        "menu": menu,
+    }
+    return render(request, 'index.html', context=context)
 
 
 def contact(request):
-    return render(request, 'contact.html')
+    title = "контакты"
+    index = "index"
+    products = "products"
+    contact = "contact"
+    menu = [
+        {'href': index, 'name': 'домой'},
+        {'href': products, 'name': 'продукты'},
+        {'href': contact, 'name': 'контакты'},
+    ]
+    context = {
+        "title": title,
+        "menu": menu,
+    }
+    return render(request, 'contact.html', context=context)
