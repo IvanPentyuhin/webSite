@@ -1,35 +1,26 @@
 from django.shortcuts import render
+from mainapp.models import Product
+
+
 
 
 def index(request):
     title = "GeekShop"
-    index = "index"
-    contact = "contact"
-    products = "products"
-    menu = [
-        {'href': index, 'name': 'домой'},
-        {'href': products, 'name': 'продукты'},
-        {'href': contact, 'name': 'контакты'},
-    ]
+
+    products = Product.objects.all()[:3]
+
     context = {
         "title": title,
-        "menu": menu,
+        "products": products,
     }
-    return render(request, 'index.html', context=context)
+    return render(request, 'index.html', context)
 
 
 def contact(request):
     title = "контакты"
-    index = "index"
-    products = "products"
-    contact = "contact"
-    menu = [
-        {'href': index, 'name': 'домой'},
-        {'href': products, 'name': 'продукты'},
-        {'href': contact, 'name': 'контакты'},
-    ]
+
     context = {
         "title": title,
-        "menu": menu,
+
     }
-    return render(request, 'contact.html', context=context)
+    return render(request, 'contact.html', context)
