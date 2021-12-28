@@ -2,7 +2,7 @@
 {% load static %}
 {% block css%}
 	<link rel="stylesheet" type="text/css" href="{% static 'mainapp/style.css' %}">
-{% endblock%}
+{% endblock %}
 
 {% block content %}
 		<div class="hero-white">
@@ -18,8 +18,8 @@
 					{% for link in links_menu %}
 						<li><a href="{{link.href}}" class="{% if request.resolver_match.url_name == link.href %}
                         active
-                      {% endif %}">
-                	{{ link.name }}</a></li>
+                      	{% endif %}">
+                		{{ link.name }}</a></li>
 					{% endfor%}
 				</ul>
 			</div>
@@ -73,7 +73,6 @@
 				</div>
 				<div class="related-products clearfix">
 					{% for product in products %}
-					{% for product in products %}
 					<div class="block">
 						<a href="#"><img src="/media/{{ product.image }}" alt="{{ product.short_desc }}">
 							<div class="text">
@@ -87,4 +86,5 @@
 				</div>
 			</div>
 		</div>
-		{% endblock%}
+
+{% endblock %}
