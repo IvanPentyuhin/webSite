@@ -47,3 +47,14 @@
 .trending-products a:hover .text{
 	display: block;
 }
+
+
+.basket {
+	display: block;
+	width: max-content;
+	height: 23px;
+	position: absolute;
+	top: 57px;
+	left: 1210px;
+}
+

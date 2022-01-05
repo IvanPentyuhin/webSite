@@ -1,0 +1,10 @@
+.basket {
+	display: block;
+	width: max-content;
+	height: 23px;
+	background-image: url(img/basket.png);
+	position: absolute;
+	top: 57px;
+	left: 1210px;
+}
+

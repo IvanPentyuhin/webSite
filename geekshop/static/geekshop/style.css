@@ -80,15 +80,6 @@ html, body {
 	top: 63px;
 	left: 1176px;
 }
-.basket {
-	display: block;
-	width: 23px;
-	height: 23px;	
-	background-image: url(img/basket.png);
-	position: absolute;
-	top: 63px;
-	left: 1210px;
-}
 
 .clearfix:after {
 	content: "";
