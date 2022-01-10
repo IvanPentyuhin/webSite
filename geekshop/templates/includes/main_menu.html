@@ -11,6 +11,12 @@
 				{{ user.first_name|default:'Пользователь'}}
 			</a>
 		</li>
+		<li>
+			<a href="{% url 'admin_staff:users'%}">
+				админка
+			</a>
+		</li>
+
 	{% endif%}
 	<li>
 		{% if user.is_authenticated %}
