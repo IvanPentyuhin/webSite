@@ -40,8 +40,7 @@
                         <tbody>
                         {% for user in object_list %}
                             <tr {% if not user.is_active %} style="opacity: 0.5; text-decoration: line-through;" {% endif %}>
-                                <td><a href="{% url 'admin_staff:user_update' user.id %}" style="color: dodgerblue">{{
-                                    user.username }}</a></td>
+                                <td><a href="{% url 'admin_staff:user_update' user.id %}" style="color: dodgerblue">{{ user.username }}</a></td>
                                 <td>{{ user.first_name }}</td>
                                 <td>{{ user.last_name }}</td>
                                 <td>{{ user.email }}</td>
