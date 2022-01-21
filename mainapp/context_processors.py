@@ -1,4 +1,3 @@
-
 from basketapp.models import Basket
 
 

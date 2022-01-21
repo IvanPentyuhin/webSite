@@ -14,4 +14,11 @@
     <booten class="btn btn-round form-control">
         <a href="{% url 'auth:register' %}" class="">зарегистрироваться</a>
     </booten>
+    <booten class="btn btn-round form-control">
+        <a href="{% url 'social:begin' 'vk-oauth2' %}?next=/">Вход через VK </a>
+    </booten>
+    <booten class="btn btn-round form-control">
+         <a href="{% url 'social:begin' 'facebook' %}?next=/">Sign in with Facebook</a>
+    </booten>
+
 {% endblock %}
