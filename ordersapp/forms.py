@@ -7,13 +7,15 @@ class OrderForm(forms.ModelForm):
         model = Order
         exclude = ('user',)
 
-        def __init__(self, *args, **kwargs):
-            super(OrderForm, self).__init__(*args, **kwargs)
-            for field_name, field in self.fields.items():
-                field.widget.attrs['class'] = 'form-control'
+    def __init__(self, *args, **kwargs):
+        super(OrderForm, self).__init__(*args, **kwargs)
+        for field_name, field in self.fields.items():
+            field.widget.attrs['class'] = 'form-control'
 
 
 class OrderItemForm(forms.ModelForm):
+    price = forms.CharField(label='цена', required=False)
+
     class Meta:
         model = OrderItem
         exclude = ()
