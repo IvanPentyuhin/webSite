@@ -12,3 +12,4 @@ urlpatterns = [
     path('update/<int:pk>/', ordersapp.OrderUpdate.as_view(), name='order_update'),
     path('delete/<int:pk>/', ordersapp.OrderDelete.as_view(), name='order_delete'),
 ]
+
