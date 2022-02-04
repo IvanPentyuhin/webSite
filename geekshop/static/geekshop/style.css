@@ -80,15 +80,6 @@ html, body {
 	top: 63px;
 	left: 1176px;
 }
-.basket {
-	display: block;
-	width: 23px;
-	height: 23px;	
-	background-image: url(img/basket.png);
-	position: absolute;
-	top: 63px;
-	left: 1210px;
-}
 
 .clearfix:after {
 	content: "";
@@ -258,7 +249,7 @@ html, body {
 .tab-content {
 	margin-top: 50px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	margin-bottom: 120px;
 }
 .tab-content .block {
@@ -362,53 +353,6 @@ html, body {
 
 }
 
-.trending-products {
-	margin-top: 53px;
-	
-}
-.trending-products .block a img {
-	float: left;
-}
-.trending-products .block {
-	float: left;
-	margin: 15px;
-	display: block;
-	height: 370px;
-	width: 370px;
-	position: relative;
-}
-.trending-products a .text {
-	display: none;
-	height: 368px;
-	width: 368px;
-	background-color: #ffffff;
-    opacity: 0.9;
-    position: absolute;
-    top: 0;
-    text-align: center;
-    border: 1px solid #9c9c9c;
-}
-.trending-products a .text h4 {
-	color:  #212121;
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 30px;
-	text-align: center;
-}
-.trending-products a .text p {
-	color:  #6c6c6c;
-	font-size: 20px;
-	font-weight: 300;
-	text-align: center;
-	margin: 15px 15px;
-}
-.trending-products a .text img {
-	float: none;
-	margin-top: 80px;
-}
-.trending-products a:hover .text{
-	display: block;
-}
 
 .hot-deal {
 	margin-top: 105px;
